@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center text-center bg-light">
+    <div>
+        <h1 class="display-5">Welcome to MockWebsite</h1>
+        <p class="lead">
+            This website contains test content and is intended for running automated tests.
+        </p>
+
+        <!--broken link here-->
+        <a href="/broken" class="btn btn-primary mt-3 btn-lg text-white text-decoration-none">
+            Go to About Page
+        </a>
+
+    </div>
+</div>
+
+<script>
+    // JS-error
+    throw new Error("Test JS error for smoke test");
+</script>
+
+{% endblock %}

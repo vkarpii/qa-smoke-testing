@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Test Report {{timestamp}}</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f2f2f2; }
+        tr.fail { background-color: #fdd; }
+        tr.pass { background-color: #dfd; }
+    </style>
+</head>
+<body>
+    <h2>Test Report - {{timestamp}}</h2>
+    <table>
+        <tr>
+            <th>Test</th>
+            <th>Status</th>
+            <th>Error message</th>
+        </tr>
+        {{table_rows}}
+    </table>
+</body>
+</html>
