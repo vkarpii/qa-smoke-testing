@@ -61,3 +61,25 @@ The test runner will:
 - Execute smoke tests against the running site
 - Collect UI, console, and HTTP errors
 - Generate an HTML test report
+
+## Smoke Tests Coverage
+The smoke test suite verifies:
+- Page availability and basic navigation
+- Presence of critical UI elements (header, navigation, main content)
+- JavaScript console errors
+- HTTP response status codes
+
+## Tests expected to fail:
+test_home_page_clicks → FAIL
+ Error: 
+ Link check failed: 'Go to About Page' -> http://localhost:3000/broken, reason: Broken link: 'Go to About Page' -> http://localhost:3000/broken, status 404
+
+test_home_page_console_errors → FAIL
+ Error: 
+ JS console errors detected on /: ['Test JS error for smoke test']
+
+## Extending the Tests
+To add a new smoke test:
+1. Create a new test file in automation/tests
+2. Follow the existing async test structure
+3. The test will be automatically discovered by the test runner
