@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Test Report 20260210_171822</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f2f2f2; }
+        tr.fail { background-color: #fdd; }
+        tr.pass { background-color: #dfd; }
+    </style>
+</head>
+<body>
+    <h2>Test Report - 20260210_171822</h2>
+    <table>
+        <tr>
+            <th>Test</th>
+            <th>Status</th>
+            <th>Error message</th>
+        </tr>
+        
+            <tr class="pass">
+                <td>test_about_page_clicks</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+            <tr class="pass">
+                <td>test_about_page_console_errors</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+            <tr class="pass">
+                <td>test_about_page_content</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+            <tr class="pass">
+                <td>test_about_page_h1</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+            <tr class="pass">
+                <td>test_about_page_interactive</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+            <tr class="pass">
+                <td>test_about_page_nav</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+            <tr class="pass">
+                <td>test_about_page_response</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+            <tr class="fail">
+                <td>test_home_page_clicks</td>
+                <td>FAIL</td>
+                <td>Link check failed: 'Go to About Page' -> http://localhost:3000/broken, reason: Broken link: 'Go to About Page' -> http://localhost:3000/broken, status 404</td>
+            </tr>
+            
+            <tr class="fail">
+                <td>test_home_page_console_errors</td>
+                <td>FAIL</td>
+                <td>JS console errors detected on /: ['Test JS error for smoke test']</td>
+            </tr>
+            
+            <tr class="pass">
+                <td>test_home_page_interactive</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+            <tr class="pass">
+                <td>test_home_page_nav</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+            <tr class="pass">
+                <td>test_home_page_response</td>
+                <td>PASS</td>
+                <td></td>
+            </tr>
+            
+    </table>
+</body>
+</html>
