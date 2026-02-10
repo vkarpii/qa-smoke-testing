@@ -78,6 +78,8 @@ test_home_page_console_errors → FAIL
  Error: 
  JS console errors detected on /: ['Test JS error for smoke test']
 
+ [Tests table](image.png)
+
 ## Extending the Tests
 To add a new smoke test:
 1. Create a new test file in automation/tests
